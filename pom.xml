@@ -28,6 +28,8 @@
         <module>spring-word</module><!--基于hutool自定义导出word-->
         <module>spring-poi</module><!--整合apache poi-->
         <module>spring-mongodb</module><!--整合mongodb-->
+        <module>mybatis-plus-sample</module><!--分表、wrapper构造-->
+
     </modules>
     <packaging>pom</packaging>
     <properties>
