@@ -1,0 +1,7 @@
+server:
+  port: 8088
+
+webSocket:
+  netty:
+    port: 35555
+    path: /webSocket

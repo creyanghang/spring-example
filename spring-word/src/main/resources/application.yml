@@ -1,0 +1,6 @@
+server:
+  port: 8098
+
+spring:
+  application:
+    name: spring-word-server

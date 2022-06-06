@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>project-resumer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>resumer</module><!--无任何业务编写的登录认证框架 redis、mybatis-plus-->
+        <module>common</module><!--基于resumer模块拆解，实现业务模块和配置分离-->
+        <module>spring-kafka</module><!--整合kafka-->
+        <module>spring-es</module><!--整合elasticsearch-->
+        <module>spring-excel</module><!--整合easyExcel二次封装-->
+        <module>spring-netty</module><!--整合NIO netty-->
+        <module>spring-upload</module><!--单文件、多文件上传-->
+        <module>spring-download</module><!--本地文件下载、网络文件下载、本地文件批量压缩下载、网络文件批量压缩下载-->
+        <module>spring-package-war</module><!--打war包-->
+        <module>spring-package</module><!--打jar包-->
+        <module>spring-freemarker</module><!--整合freemarker，根据模板导出word-->
+        <module>spring-scheduler</module><!--spring框架内置异步定时任务-->
+        <module>spring-quartz</module><!--整合异步任务quartz-->
+        <module>spring-mail</module><!--整合mail，实现普通邮件，附件邮件，模板邮件发送-->
+        <module>spring-rabbitmq</module><!--整合rabbitmq-->
+        <module>spring-redis</module><!--整合redis-->
+        <module>spring-qrcode</module><!-- 生成二维码、彩色、带logo、高低纠错级别、识别二维码-->
+        <module>spring-word</module><!--基于hutool自定义导出word-->
+        <module>spring-poi</module><!--整合apache poi-->
+        <module>spring-mongodb</module><!--整合mongodb-->
+    </modules>
+    <packaging>pom</packaging>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <lombok.version>1.16.18</lombok.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <!--spring boot 2.2.2-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.5.9</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <optional>true</optional>
+            </dependency>
+            <!--log4j2 依赖-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-log4j2</artifactId>
+                <version>2.5.9</version>
+            </dependency>
+            <!--接口文档-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>2.0.9</version>
+            </dependency>
+            <!--校验参数-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+                <version>2.6.6</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>2.12.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>3.2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.79</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>2.5.9</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.5.9</version>
+                <configuration>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

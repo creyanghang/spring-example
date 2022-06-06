@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /resumer
+
+spring:
+  application:
+    name: resumer-server
+  profiles:
+    active: dev
+# 登录拦截
+common:
+  setting:
+    intercept:
+      type: resumer

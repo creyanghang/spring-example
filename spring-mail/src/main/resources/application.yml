@@ -1,0 +1,10 @@
+server:
+  port: 8086
+
+spring:
+  mail:
+    username: 你的邮箱
+    password: 你申请的密钥
+    #不同邮件后缀 host不同
+    host: smtp.163.com
+    nickname: Mr.Yang

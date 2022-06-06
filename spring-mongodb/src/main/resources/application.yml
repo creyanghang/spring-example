@@ -1,0 +1,11 @@
+server:
+  port: 8087
+
+
+spring:
+  application:
+    name: spring-mongodb-server
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017

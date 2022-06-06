@@ -1,0 +1,73 @@
+knife4j:
+  enable: true
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    dynamic:
+      primary: master #配置默认数据库
+      datasource:
+        master: # 数据源1配置
+          url: jdbc:mysql://127.0.0.1:3306/resumer_user?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=GMT%2B8
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.cj.jdbc.Driver
+#        slave_1: # 数据源2配置
+#          url: jdbc:mysql://localhost:3306/db01?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=GMT%2B8
+#          username: root
+#          password: creation
+#          driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      # 初始化连接池大小，最小，最大
+      initial-size: 1
+      max-active: 20
+      min-idle: 1
+      # 获取连接时最大等待时间，单位毫秒
+      max-wait: 60000
+      # 监控配置
+      stat-view-servlet:
+        login-username: admin                       # 登录账号
+        login-password: admin                       # 登录密码
+        reset-enable: false                         # 重置监控页面数据
+        url-pattern: /druid/*                       # 登录页面后缀
+        enabled: true                               # 开启监控
+        allow:                                      # 添加IP白名单,不写就是所有都允许
+      # 监控配置中的 web监控
+      web-stat-filter:
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+        enabled: true
+
+  autoconfigure:
+    exclude:  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure # # 去除druid配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: resumer
+    connect-timeout: 10s
+    lettuce:
+      pool:
+        # 链接池中最小的空闲链接 默认为0
+        min-idle: 0
+        # 链接池中最大的空闲连接 默认为 8
+        max-idle: 8
+        #连接池中最大数据库链接数 默认为8
+        max-active: 8
+        #连接池最大阻塞等待时间 负值表示没有限制
+        max-wait: -1ms
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #
+    cache-enabled: false
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+      table-underline: true
+      #逻辑删除配置
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+      logic-delete-field: deleted
+
+

@@ -1,0 +1,7 @@
+server:
+  port: 8084
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates/
+    # 模板后缀名
+    suffix: .ftl

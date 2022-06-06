@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.resumer.mapper.user.PicVerifyMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.resumer.entity.po.user.PicVerify">
+                    <id column="id" property="id" />
+                    <result column="create_time" property="createTime" />
+                    <result column="deleted" property="deleted" />
+                    <result column="verify_code" property="verifyCode" />
+                    <result column="verify_file_name" property="verifyFileName" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, create_time, deleted, verify_code, verify_file_name
+        </sql>
+
+</mapper>

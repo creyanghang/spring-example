@@ -1,0 +1,11 @@
+server:
+  port: 8087
+
+file:
+  upload:
+    path: E:\data\file\
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB  #单个数据大小
+      max-request-size: 100MB #总数据大小
