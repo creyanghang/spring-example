@@ -1,0 +1,36 @@
+server:
+  port: 8101
+
+#开放端点用于SpringBoot Admin的监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+spring:
+  application:
+    name: spring-admin-client
+  boot:
+    admin:
+      client:
+        url: http://localhost:8100   #这里配置admin server 的地址
+        # 配置 admin-server的账号和密码
+        username: admin
+        password: 123456
+        instance:
+          metadata:
+            # 这里配置admin-client的账号和密码
+            user.name: ${spring.security.user.name}
+            user.password: ${spring.security.user.password}
+  # admin-client 的用户名和密码
+  security:
+    user:
+      name: clientAdmin
+      password: 123456
+
+logging:
+  file:
+    name: admin-client.log  #配置生成日志文件名称

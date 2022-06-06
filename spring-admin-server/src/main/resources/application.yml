@@ -1,0 +1,9 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: spring-admin-server
+  security:
+    user:
+      name: admin
+      password: 123456
