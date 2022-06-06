@@ -41,5 +41,7 @@ spring框架内置异步定时任务
 整合mongodb
 ### spring-qrcode
 生成二维码、彩色、带logo、高低纠错级别、识别二维码
+### mybatis-plus-sample
+分表、wrapper构造
 
 [仓库地址](https://gitee.com/creyanghang/resumer/tree/master)
