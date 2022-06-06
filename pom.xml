@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>project-resumer</artifactId>
+    <artifactId>spring-example</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>resumer</module><!--无任何业务编写的登录认证框架 redis、mybatis-plus-->
@@ -28,7 +28,9 @@
         <module>spring-word</module><!--基于hutool自定义导出word-->
         <module>spring-poi</module><!--整合apache poi-->
         <module>spring-mongodb</module><!--整合mongodb-->
-        <module>mybatis-plus-sample</module><!--分表、wrapper构造-->
+        <module>mybatis-plus-sample</module>
+        <module>spring-admin-server</module>
+        <module>spring-admin-client</module><!--分表、wrapper构造-->
 
     </modules>
     <packaging>pom</packaging>
@@ -41,7 +43,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--spring boot 2.2.2-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
