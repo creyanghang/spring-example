@@ -28,9 +28,10 @@
         <module>spring-word</module><!--基于hutool自定义导出word-->
         <module>spring-poi</module><!--整合apache poi-->
         <module>spring-mongodb</module><!--整合mongodb-->
-        <module>mybatis-plus-sample</module>
-        <module>spring-admin-server</module>
-        <module>spring-admin-client</module><!--分表、wrapper构造-->
+        <module>mybatis-plus-sample</module><!--分表、wrapper构造-->
+        <module>spring-admin-server</module><!--spring-admin服务端-->
+        <module>spring-admin-client</module><!--spring-admin客户端-->
+        <module>spring-stream</module><!--java8 流操作-->
 
     </modules>
     <packaging>pom</packaging>
