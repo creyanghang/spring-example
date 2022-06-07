@@ -1,0 +1,5 @@
+server:
+  port: 8102
+spring:
+  application:
+    name: spring-stream-server
