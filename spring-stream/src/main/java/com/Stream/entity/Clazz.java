@@ -5,29 +5,29 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
+import java.util.List;
+
 /**
  * @author yh
- * @description 学生
+ * @description 班级
  * @date 2022/6/7
  */
-@Data
 @Accessors(chain = true)
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
-public class Student{
+@NoArgsConstructor
+public class Clazz {
 
     private Integer id;
 
     private String name;
 
-    private Integer age;
-
     /**
-     * 班级id
+     * 学生id
      * @param null
      * @author yh
      * @date 2022/6/8
      */
 
-    private Integer clazzId;
+    private List<Integer> studentId;
 }

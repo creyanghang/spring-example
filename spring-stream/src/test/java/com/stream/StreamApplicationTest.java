@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
 /**
  * 创建Stream 一个数据源（如：集合、数组），获取一个流
@@ -22,7 +22,33 @@ import java.util.Optional;
 public class StreamApplicationTest {
 
     @Test
+    public void test4() {
+        List<Student> list = new ArrayList<>();
+        list.add(new Student(1, "张三", 18, 10));
+        list.add(new Student(2, "李四", 17, 11));
+        list.add(new Student(3, "李明", 14, 12));
+        List<Student> list2 = list.stream().filter(p -> p.getAge() > 14).collect(Collectors.toList());
+        System.out.println(list);
+        System.out.println(list2);
+    }
+
+    @Test
     public void test3() {
+        List<Student> list = new ArrayList<>();
+        list.add(new Student());
+        list.add(new Student());
+        list.stream().peek(p -> {
+            p.setName("张三");
+            System.out.println(p);
+        });
+        System.out.println(list);
+        // 只有调用终端操作后才会执行peek
+//        list2.collect(Collectors.toList());
+        System.out.println(list);
+    }
+
+    @Test
+    public void test2() {
         List<String> list = new ArrayList<>();
         list.add("1");
         list.add("2");
