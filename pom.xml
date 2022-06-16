@@ -31,7 +31,8 @@
         <module>mybatis-plus-sample</module><!--分表、wrapper构造-->
         <module>spring-admin-server</module><!--spring-admin服务端-->
         <module>spring-admin-client</module><!--spring-admin客户端-->
-        <module>spring-stream</module><!--java8 流操作-->
+        <module>spring-stream</module>
+        <module>spring-rocket</module><!--java8 流操作-->
 
     </modules>
     <packaging>pom</packaging>
