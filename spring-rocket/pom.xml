@@ -25,8 +25,14 @@
         <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
         <dependency>
             <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-            <version>4.8.0</version>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 </project>

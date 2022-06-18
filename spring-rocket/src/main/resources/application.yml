@@ -3,3 +3,28 @@ server:
 spring:
   application:
     name: spring-rocket-server
+
+#rocketmq配置信息
+rocketmq:
+  #nameservice服务器地址（多个以英文逗号隔开）
+  name-server: 127.0.0.1:9876
+  #生产者配置
+  producer:
+    #组名
+    group: anran-producer-group
+    #目的地（topic:tag）
+    #topic
+    topic: anran-topic
+    #sync tag(同步消息tag)
+    sync-tag: anran-sync-tags
+    #async tag(异步消息tag)
+    async-tag: anran-async-tags
+    #oneway tag(单向消息tag)
+    oneway-tag: anran-oneway-tags
+  consumer:
+    #组名
+    group: anran-consumer-group
+    #监听主题
+    topic: anran-topic
+    #tags（监听多个tag时使用 || 进行分割，如果监听所有使用*或者不填）
+    tags: anran-sync-tags||anran-async-tags||anran-oneway-tags
