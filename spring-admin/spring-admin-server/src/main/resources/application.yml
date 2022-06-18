@@ -6,4 +6,4 @@ spring:
   security:
     user:
       name: admin
-      password: 123456
+      password: admin

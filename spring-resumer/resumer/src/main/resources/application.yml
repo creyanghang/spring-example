@@ -1,0 +1,49 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /resumer
+
+spring:
+  application:
+    name: spring-resumer-server
+  profiles:
+    active: dev
+  boot:
+    admin:
+      client:
+        #这里配置admin server 的地址
+        url: http://127.0.0.1:8100
+        # 配置 admin-server的账号和密码
+        username: admin
+        password: admin
+        instance:
+          metadata:
+            # 这里配置admin-client的账号和密码
+            user.name: ${spring.security.user.name}
+            user.password: ${spring.security.user.password}
+  # admin-client 的用户名和密码
+  security:
+    user:
+      name: clientAdmin
+      password: 123456
+# 登录拦截
+common:
+  setting:
+    intercept:
+      type: resumer
+logging:
+  file:
+    name: admin-client.log  #配置生成日志文件名称
+
+#开放端点用于SpringBoot Admin的监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+  health:
+    redis:
+      enabled: false

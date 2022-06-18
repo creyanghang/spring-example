@@ -48,3 +48,5 @@ spring-admin客户端
 ### spring-admin-server
 spring-admin服务端
 [仓库地址](https://gitee.com/creyanghang/resumer/tree/master)
+
+http://127.0.0.1:8100/login

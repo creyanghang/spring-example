@@ -19,7 +19,7 @@ spring:
         url: http://localhost:8100   #这里配置admin server 的地址
         # 配置 admin-server的账号和密码
         username: admin
-        password: 123456
+        password: admin
         instance:
           metadata:
             # 这里配置admin-client的账号和密码
