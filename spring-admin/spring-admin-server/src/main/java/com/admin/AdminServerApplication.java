@@ -7,8 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author yh
  * @description 开启 springboot admin 服务端
- * @date 2022/6/6
+ * @date 2022/6/18
  */
+
 @EnableAdminServer
 @SpringBootApplication
 public class AdminServerApplication {

@@ -29,10 +29,9 @@
         <module>spring-poi</module><!--整合apache poi-->
         <module>spring-mongodb</module><!--整合mongodb-->
         <module>mybatis-plus-sample</module><!--分表、wrapper构造-->
-        <module>spring-admin-server</module><!--spring-admin服务端-->
-        <module>spring-admin-client</module><!--spring-admin客户端-->
         <module>spring-stream</module>
-        <module>spring-rocket</module><!--java8 流操作-->
+        <module>spring-rocket</module>
+        <module>spring-admin</module><!--java8 流操作-->
 
     </modules>
     <packaging>pom</packaging>
@@ -40,6 +39,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <lombok.version>1.16.18</lombok.version>
+        <revision>2.5.9</revision>
     </properties>
 
 
@@ -48,7 +48,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.5.9</version>
+                <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -62,7 +62,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-log4j2</artifactId>
-                <version>2.5.9</version>
+                <version>${revision}</version>
             </dependency>
             <!--接口文档-->
             <dependency>
