@@ -22,6 +22,7 @@
 | mybatis-plus-sample | mybatis-plus                                                                                                                                                                                                                           | 分表、wrapper构造                                                              |
 | spring-admin        | spring-boot-admin-starter-client、spring-boot-admin-starter-server                                                                                                                                                                      | 整合spring-boot-admin监控平台                                                   |
 | spring-rocket       | rocketmq-spring-boot-starter                                                                                                                                                                                                           | 整合RocketMQ                                                                |
+| spring-stream       | | Java8特性                                                                   |
 
 [仓库地址](https://gitee.com/creyanghang/resumer/tree/master)
 
