@@ -30,7 +30,8 @@
         <module>spring-stream</module><!--java8 流操作-->
         <module>spring-rocket</module><!--RocketMQ-->
         <module>spring-admin</module>
-        <module>spring-resumer</module><!--spring-admin监控-->
+        <module>spring-resumer</module>
+        <module>spring-thread</module><!--spring-admin监控-->
     </modules>
     <packaging>pom</packaging>
     <properties>

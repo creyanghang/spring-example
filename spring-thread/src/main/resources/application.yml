@@ -1,0 +1,15 @@
+#server:
+#  port: 8104
+##  tomcat:
+##    uri-encoding: UTF-8
+##    #最大链接数
+##    max-connections: 10000
+##    #最大等待队列长度
+##    accept-count: 500
+##    threads:
+##      #最小线程数
+##      min-spare: 100
+##      #最大线程数
+##      max: 100
+#
+#
