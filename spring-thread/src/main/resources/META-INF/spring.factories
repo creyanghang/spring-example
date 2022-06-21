@@ -1,1 +1,2 @@
+# 监听 ApplicationEvent 事件
 org.springframework.context.ApplicationListener=com.thread.conf.PropertiesListener2
