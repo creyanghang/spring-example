@@ -34,8 +34,8 @@ public class TestController {
         String tomcatLog = ((TomcatWebServer) applicationContext.getWebServer()).getTomcat().getConnector().getProtocolHandler().getExecutor().toString();
         System.out.println(tomcatLog);
         String name = Thread.currentThread().getName();
-        //System.out.println(name);
-//        Thread.sleep(20);
+        System.out.println(name);
+        Thread.sleep(20);
         return tomcatLog;
     }
 }

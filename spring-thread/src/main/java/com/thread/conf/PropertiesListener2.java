@@ -16,18 +16,19 @@ import java.util.Properties;
  */
 @Configuration
 public class PropertiesListener2 implements ApplicationListener<ApplicationEnvironmentPreparedEvent> {
-    @Override
-    public void onApplicationEvent(ApplicationEnvironmentPreparedEvent event) {
-        ConfigurableEnvironment environment = event.getEnvironment();
-        Properties props = new Properties();
-        props.put("server.tomcat.threads.min-spare", 100);
-        environment.getPropertySources().addFirst(new PropertiesPropertySource("myProps", props));
-        PropertySource<?> myProps = PropertiesPropertySource.named("myProps");
-    }
+//    @Override
+//    public void onApplicationEvent(ApplicationEnvironmentPreparedEvent event) {
+//        ConfigurableEnvironment environment = event.getEnvironment();
+//        Properties props = new Properties();
+//        props.put("server.tomcat.threads.min-spare", 100);
+//        props.put("server.port", 8105);
+//        environment.getPropertySources().addFirst(new PropertiesPropertySource("myProps", props));
+//        PropertySource<?> myProps = PropertiesPropertySource.named("myProps");
+//    }
     /*
  
      * 在生命周期侦听器中添加其他属性源
-   
+     */
     @Override
     public void onApplicationEvent(ApplicationEnvironmentPreparedEvent event) {
         ConfigurableEnvironment environment = event.getEnvironment();
@@ -47,5 +48,5 @@ public class PropertiesListener2 implements ApplicationListener<ApplicationEnvir
 
         environment.getPropertySources().addFirst(new PropertiesPropertySource("myProps", props));
     }
-    */
+
 }

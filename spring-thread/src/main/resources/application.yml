@@ -1,5 +1,5 @@
-server:
-  port: 8104
+#server:
+#  port: 8104
 #  tomcat:
 #    uri-encoding: UTF-8
 #    #最大链接数
@@ -11,5 +11,3 @@ server:
 #      min-spare: 100
 #      #最大线程数
 #      max: 100
-
-

@@ -13,8 +13,6 @@
 //@Configuration
 //public class TomcatConnectionCustomizer implements TomcatConnectorCustomizer{
 //
-//
-//
 //    /**
 //     * 配置类: {@link org.springframework.boot.autoconfigure.web.ServerProperties}
 //     *
@@ -23,7 +21,7 @@
 //     */
 //    @Override
 //    public void customize(Connector connector) {
-//        connector.setPort(8104);
+//        connector.setPort(8105);
 //        // 连接协议处理器. 默认： org.apache.coyote.http11.Http11NioProtocol
 //        connector.setAttribute("protocol", "org.apache.coyote.http11.Http11Nio2Protocol");
 //
