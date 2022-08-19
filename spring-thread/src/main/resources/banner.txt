@@ -1,0 +1,18 @@
+${AnsiColor.BRIGHT_GREEN}                                .::::.
+${AnsiColor.BRIGHT_YELLOW}                              .::::::::.
+${AnsiColor.BRIGHT_RED}                              :::::::::::
+${AnsiColor.BRIGHT_CYAN}                              ':::::::::::..
+${AnsiColor.BRIGHT_MAGENTA}                               :::::::::::::::'
+${AnsiColor.BRIGHT_GREEN}                                ':::::::::::.
+${AnsiColor.BRIGHT_RED}                                  .::::::::::::::'
+${AnsiColor.BRIGHT_YELLOW}                                .:::::::::::...
+${AnsiColor.BRIGHT_GREEN}                               ::::::::::::::''
+${AnsiColor.CYAN}                   .:::.       '::::::::''::::
+${AnsiColor.BRIGHT_RED}                  .::::::::.      ':::::'  '::::
+${AnsiColor.BRIGHT_RED}                 .::::':::::::.    :::::    '::::.
+${AnsiColor.BRIGHT_RED}               .:::::' ':::::::::. :::::      ':::.
+${AnsiColor.BRIGHT_RED}             .:::::'     ':::::::::.:::::       '::.
+${AnsiColor.BRIGHT_GREEN}            .::::''         '::::::::::::::       '::.
+${AnsiColor.CYAN}          .::''              '::::::::::::         :::...
+${AnsiColor.BRIGHT_RED}         ..::::                  ':::::::::'        .:' ''''
+${AnsiColor.BRIGHT_RED}    ..''''':'                    ':::::.'

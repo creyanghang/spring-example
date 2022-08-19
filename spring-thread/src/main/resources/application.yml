@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: spring-server
 #server:
 #  port: 8104
 #  tomcat:

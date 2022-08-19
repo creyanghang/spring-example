@@ -11,7 +11,16 @@ import com.resumer.service.UserRoleService;
 import com.common.util.BeanMapperUtils;
 import com.common.util.EmptyUtil;
 import lombok.AllArgsConstructor;
+import net.bytebuddy.implementation.auxiliary.AuxiliaryType;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionDefinition;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import java.util.Collections;
 import java.util.List;
@@ -40,6 +49,7 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements Me
      * @author yh
      * @date 2022/5/28
      */
+
     @Override
     public List<Menu> queryMenuByUserId(Long userId, String menuType) {
         List<Long> roleIdList = userRoleService.queryUserRoleId(userId);
