@@ -1,3 +1,7 @@
+您的 Star :+1::+1:是我的最大动力！
+
+## 模块描述
+
 | 模块|组件|描述|
 |-|-|-|
 |resumer|spring-redis、AOP、Intercept、Mybatis-Plus+Mysql多数据源、druid+lettuce连接池、hibernate-validator、log4j2、Knife4j、jwt、dozer、hutool、lombok、fastjson、hutool<br/>common:基于resumer模块拆解，提出AOP、Intercept、config等，编写业务只需要新建业务Module，编写对应的模块配置，实现业务模块和配置分离 | 无任何业务编写的登录认证框架，用户体系库sql脚本在模块根目录下|
@@ -23,9 +27,13 @@
 |spring-rocket| rocketmq-spring-boot-starter| 整合RocketMQ |
 |spring-stream | |Java8特性|
 |spring-thread| |自定义spring启动图标，通过监听事件动态添加属性源 |
+|spring-upload| | 单文件、多文件上传|
+
+后续我将持续整合各种常用组件，欢迎关注
 
 [仓库地址](https://gitee.com/creyanghang/resumer/tree/master)
 
-数据库监控平台：[http://127.0.0.1:8080/resumer/druid/login.html](http://127.0.0.1:8080/resumer/druid/login.html)<br/>
-应用程序监控平台：[http://127.0.0.1:8100/login](http://127.0.0.1:8100/login)<br/>
+druid数据库监控平台：[http://127.0.0.1:8080/resumer/druid/login.html](http://127.0.0.1:8080/resumer/druid/login.html)<br/>
 在线接口文档：[http://127.0.0.1:8080/resumer/doc.html](http://127.0.0.1:8080/resumer/doc.html)<br/>
+
+应用程序监控平台：[http://127.0.0.1:8100/login](http://127.0.0.1:8100/login)<br/>
