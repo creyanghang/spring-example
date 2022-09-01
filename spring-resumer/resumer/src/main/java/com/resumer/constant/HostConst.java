@@ -9,5 +9,5 @@ public class HostConst {
     /**
      * 验证码访问地址
      */
-    public static final String PIC_VERIFY = "http://43.138.50.206/image/verify/";
+    public static final String PIC_VERIFY = "http://127.0.0.1/image/verify/";
 }

@@ -19,7 +19,6 @@ import java.util.Map;
 @MapperScan("com.sample.mapper")
 public class MybatisPlusConfig {
 
-
     private static String modTables;
     private static Map<String, Integer> tableMap = new HashMap<>(16);
 
@@ -66,6 +65,4 @@ public class MybatisPlusConfig {
         // dynamicTableNameInnerInterceptor.setTableNameHandlerMap(map);
         return interceptor;
     }
-
-
 }

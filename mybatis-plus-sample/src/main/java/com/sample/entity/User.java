@@ -12,7 +12,7 @@ import lombok.experimental.Accessors;
 @Data
 @Accessors(chain = true)
 @TableName(value = "user")
-public class UserPO {
+public class User {
     private Long id;
     private String name;
     private Integer age;

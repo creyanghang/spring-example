@@ -26,6 +26,6 @@
 
 [仓库地址](https://gitee.com/creyanghang/resumer/tree/master)
 
-数据库监控平台：[http://43.138.50.206:8080/resumer/druid/login.html](http://43.138.50.206:8080/resumer/druid/login.html)<br/>
-应用程序监控平台：[http://43.138.50.206:8100/login](http://43.138.50.206:8100/login)<br/>
-在线接口文档：[http://43.138.50.206:8080/resumer/doc.html](http://43.138.50.206:8080/resumer/doc.html)<br/>
+数据库监控平台：[http://127.0.0.1:8080/resumer/druid/login.html](http://127.0.0.1:8080/resumer/druid/login.html)<br/>
+应用程序监控平台：[http://127.0.0.1:8100/login](http://127.0.0.1:8100/login)<br/>
+在线接口文档：[http://127.0.0.1:8080/resumer/doc.html](http://127.0.0.1:8080/resumer/doc.html)<br/>

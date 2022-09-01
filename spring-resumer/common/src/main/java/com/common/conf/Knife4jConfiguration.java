@@ -24,7 +24,7 @@ public class Knife4jConfiguration {
                 .apiInfo(new ApiInfoBuilder()
                         //.title("swagger-bootstrap-ui-demo RESTful APIs")
                         .description("# swagger增强版-Knife4j")
-                        .termsOfServiceUrl("http://43.138.50.206:8080/")
+                        .termsOfServiceUrl("http://127.0.0.1:8080/")
                         .contact("creyanghang@126.com")
                         .version("1.0")
                         .build())

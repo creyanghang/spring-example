@@ -8,7 +8,7 @@ spring:
       primary: master #配置默认数据库
       datasource:
         master: # 数据源1配置
-          url: jdbc:mysql://43.138.50.206:3306/resumer_user?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=GMT%2B8
+          url: jdbc:mysql://127.0.0.1:3306/resumer_user?characterEncoding=utf8&useUnicode=true&useSSL=false&serverTimezone=GMT%2B8
           username: root
           password: 123456
           driver-class-name: com.mysql.cj.jdbc.Driver
@@ -41,7 +41,7 @@ spring:
   autoconfigure:
     exclude:  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure # # 去除druid配置
   redis:
-    host: 43.138.50.206
+    host: 127.0.0.1
     port: 6379
     password: resumer
     connect-timeout: 10s

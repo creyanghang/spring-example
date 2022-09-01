@@ -21,16 +21,16 @@ public class TestController {
 
     @GetMapping("/get")
     public String test() throws InterruptedException {
-//        for (int i = 0; i < 500; i++) {
-//            new Thread(()->{
-//                try {
-//                    Thread.sleep(20);
-//                } catch (InterruptedException e) {
-//                    throw new RuntimeException(e);
-//                }
-//                System.out.println(Thread.currentThread().getName());
-//            }).start();
-//        }
+        for (int i = 0; i < 500; i++) {
+            new Thread(()->{
+                try {
+                    Thread.sleep(20);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+                System.out.println(Thread.currentThread().getName());
+            }).start();
+        }
         String tomcatLog = ((TomcatWebServer) applicationContext.getWebServer()).getTomcat().getConnector().getProtocolHandler().getExecutor().toString();
         System.out.println(tomcatLog);
         String name = Thread.currentThread().getName();
