@@ -33,7 +33,9 @@
 
 [仓库地址](https://gitee.com/creyanghang/resumer/tree/master)
 
+**resumer模块**
 druid数据库监控平台：[http://127.0.0.1:8080/resumer/druid/login.html](http://127.0.0.1:8080/resumer/druid/login.html)<br/>
 在线接口文档：[http://127.0.0.1:8080/resumer/doc.html](http://127.0.0.1:8080/resumer/doc.html)<br/>
 
+**spring-admin模块**
 应用程序监控平台：[http://127.0.0.1:8100/login](http://127.0.0.1:8100/login)<br/>
