@@ -18,7 +18,7 @@
 |spring-rabbitmq| spring-boot-starter-amqp| 整合RabbitMQ|
 |spring-mail|spring-boot-starter-mail| 发送普通邮件，附件邮件，模板邮件|
 |spring-poi|poi|整合ApachePOI|
-|spring-word|hutool|基于hutool生产word|
+|spring-word|hutool|基于hutool生成word|
 |spring-redis|redis、lettuce链接池|整合Redis|
 |spring-mongodb|spring-boot-starter-data-mongodb|整合MongoDB|
 |spring-qrcode|hutool| 生成二维码、彩色、带logo、高低纠错级别、识别二维码 |
