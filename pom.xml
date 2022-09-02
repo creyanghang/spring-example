@@ -32,6 +32,8 @@
         <module>spring-admin</module><!--spring-admin监控-->
         <module>spring-resumer</module>
         <module>spring-thread</module>
+        <module>spring-webflux</module>
+        <module>spring-function</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
