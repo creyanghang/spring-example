@@ -28,6 +28,7 @@
 |spring-stream | |Java8特性|
 |spring-thread| |自定义spring启动图标，通过监听事件动态添加属性源 |
 |spring-upload| | 单文件、多文件上传|
+|spring-function| | Java8函数式接口|
 
 后续我将持续整合各种常用组件，欢迎关注
 
