@@ -1,7 +1,8 @@
-package com.example.service.impl;
+package com.example.dao.impl;
 
 import com.example.entity.Person;
-import com.example.service.PersonService;
+import com.example.dao.IPersonDao;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -14,12 +15,12 @@ import java.util.List;
  * @author: yh
  * @date: 2022/9/4
  */
-@Service
-public class PersonServiceImpl implements PersonService {
+@Component
+public class PersonDao implements IPersonDao {
 
     private final List<Person> personList = new ArrayList<>();
 
-    public PersonServiceImpl() {
+    public PersonDao() {
         this.personList.add(new Person(1, 17, "张三"));
         this.personList.add(new Person(2, 18, "李四"));
     }

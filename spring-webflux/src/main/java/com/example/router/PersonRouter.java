@@ -11,6 +11,12 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 import javax.annotation.Resource;
 
+/**
+ * 定义请求
+ * 相当于controller
+ * @author: yh
+ * @date: 2022/9/4
+ */
 @Configuration
 public class PersonRouter {
     @Resource

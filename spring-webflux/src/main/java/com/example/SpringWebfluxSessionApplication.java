@@ -6,7 +6,7 @@ import org.springframework.web.reactive.config.EnableWebFlux;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
 
 /**
- * @description:
+ * @description: spring-webflux案例
  * @author: yh
  * @date: 2022/9/2
  */

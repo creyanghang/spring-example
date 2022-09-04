@@ -1,12 +1,10 @@
-package com.example.service;
+package com.example.dao;
 
 import com.example.entity.Person;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import java.util.List;
-
-public interface PersonService {
+public interface IPersonDao {
 
     /**
      * 获取所有person
