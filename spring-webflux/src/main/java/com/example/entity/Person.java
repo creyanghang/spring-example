@@ -1,5 +1,10 @@
 package com.example.entity;
 
+/**
+ * person实体
+ * @author:  yh
+ * @date:  2022/9/4
+ */
 public class Person {
     private Integer id;
     private Integer age;
