@@ -30,12 +30,12 @@
         <module>spring-stream</module><!--java8 流操作-->
         <module>spring-rocket</module><!--RocketMQ-->
         <module>spring-admin</module><!--spring-admin监控-->
-        <module>spring-resumer</module>
-        <module>spring-event</module>
-        <module>spring-webflux</module>
-        <module>spring-function</module>
-        <module>spring-juc</module>
-        <module>spring-emqx</module>
+        <module>spring-resumer</module><!--spring-boot登录认证框架-->
+        <module>spring-event</module><!--自定义spring启动图标，通过监听事件动态添加属性源-->
+        <module>spring-webflux</module><!--响应式编程框架-->
+        <module>spring-function</module><!--Java8函数式接口-->
+        <module>spring-juc</module><!--并发编程-->
+        <module>spring-emqx</module><!--整合EMQX Cloud-->
     </modules>
     <packaging>pom</packaging>
     <properties>

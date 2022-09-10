@@ -20,7 +20,7 @@ public class MqttSample {
     // 发布、订阅主题
     String topic = "test/topic";
     // 消息内容
-    String content = "Hello World EMQ";
+    String content = "Hello World EMQX";
     // qos消息的服务质量可选值：0 1 2
     int qos = 2;
     // EMQ 部署控制台的连接地址

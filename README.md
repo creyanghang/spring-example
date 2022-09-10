@@ -1,4 +1,4 @@
-您的 Star :+1: :+1: 是我的最大动力！
+您的 Star :+1: :+1: 是我的最大动力！！！
 
  **模块描述**
 
@@ -8,29 +8,32 @@
 |spring-es| spring-data-elasticsearch| 整合spring-elasticsearch示例|
 |spring-excel| easyexcel|整合阿里开源easyexcel|
 | spring-kafka| spring-kafka| 整合大数据常用组件ApacheKafka（ps：分布式事件流平台mq)特点：大数据领域、高吞吐量、低延迟、可扩展性、持久性、可靠性、容错性、高并发 |
-| spring-netty| netty|整合NIO框架|
-| spring-download|commons-compress| 本地文件下载、网络文件下载、本地文件批量压缩下载、网络文件批量压缩下载|| spring-upload|| 单文件、多文件上传|
-|spring-package||打jar包|
-|spring-package-war||打war包|
+| spring-netty| Netty|整合NIO框架|
+| spring-download|commons-compress| 本地文件下载、网络文件下载、本地文件批量压缩下载、网络文件批量压缩下载|| Spring-upload|| 单文件、多文件上传|
+|spring-package|spring-boot|打jar包|
+|spring-package-war|spring-boot|打war包|
 |spring-freemarker|freemarker|根据模板导出Word|
-|spring-scheduler|| Spring框架内置异步定时任务|
+|spring-scheduler|spring-boot| Spring框架内置异步定时任务|
 |spring-quartz|spring-boot-starter-quartz|整合Quartz|
 |spring-rabbitmq| spring-boot-starter-amqp| 整合RabbitMQ|
 |spring-mail|spring-boot-starter-mail| 发送普通邮件，附件邮件，模板邮件|
 |spring-poi|poi|整合ApachePOI|
-|spring-word|hutool|基于hutool生成word|
+|spring-word|Hutool|基于hutool生成word|
 |spring-redis|redis、lettuce链接池|整合Redis|
 |spring-mongodb|spring-boot-starter-data-mongodb|整合MongoDB|
-|spring-qrcode|hutool| 生成二维码、彩色、带logo、高低纠错级别、识别二维码 |
+|spring-qrcode|Hutool| 生成二维码、彩色、带logo、高低纠错级别、识别二维码 |
 |mybatis-plus-sample|mybatis-plus| 分表、wrapper构造 |
 |spring-admin| spring-boot-admin-starter-client、spring-boot-admin-starter-server| 整合spring-boot-admin监控平台                                                   |
 |spring-rocket| rocketmq-spring-boot-starter| 整合RocketMQ |
-|spring-stream | |Java8特性|
-|spring-thread| |自定义spring启动图标，通过监听事件动态添加属性源 |
-|spring-upload| | 单文件、多文件上传|
-|spring-function| | Java8函数式接口|
+|spring-stream | spring-boot|Java8特性stream流|
+|spring-event| spring-boot|自定义spring启动图标，通过监听事件动态添加属性源 |
+|spring-upload| spring-boot| 单文件、多文件上传|
+|spring-function| spring-boot| Java8函数式接口|
+|spring-emqx|EMQX Cloud | 整合EMQX Cloud全托管的 MQTT 消息云服务|
+|spring-webflux| Spring-webflux| 响应式编程|
+|spring-juc|spring-boot | JUC并发编程，CyclicBarrier循环栅栏|
 
-后续我将持续整合各种常用组件，欢迎关注
+后续我将持续整合各种常用组件，欢迎关注。
 
 [仓库地址](https://gitee.com/creyanghang/resumer/tree/master)
 
