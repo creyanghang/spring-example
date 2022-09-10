@@ -35,6 +35,7 @@
         <module>spring-webflux</module>
         <module>spring-function</module>
         <module>spring-juc</module>
+        <module>spring-emqx</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
