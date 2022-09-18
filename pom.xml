@@ -36,6 +36,7 @@
         <module>spring-function</module><!--Java8函数式接口-->
         <module>spring-juc</module><!--并发编程-->
         <module>spring-emqx</module><!--整合EMQX Cloud-->
+        <module>spring-shardingsphere</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
