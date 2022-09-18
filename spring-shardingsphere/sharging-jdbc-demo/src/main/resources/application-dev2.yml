@@ -1,0 +1,35 @@
+# 垂直分片，对应 OrderController
+spring:
+  shardingsphere:
+    datasource:
+      # 配置真实数据源
+      names: server-order,server-user
+      # 配置第 1 个数据源
+      server-user:
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://192.168.1.1:3301/db_user
+        password: 123456
+        type: com.zaxxer.hikari.HikariDataSource
+        username: root
+      # 配置第 2 个数据源
+      server-order:
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://192.168.1.1:3302/db_order
+        password: 123456
+        type: com.zaxxer.hikari.HikariDataSource
+        username: root
+    mode:
+      # 内存模式
+      type: Memory
+    # 打印sql
+    props:
+      sql-show: true
+    rules:
+      # 标准分片表配置
+      # 由数据源名 + 表名组成，以小数点分隔。多个表以逗号分隔，支持 inline 表达式。缺省表示使用已知数据源与逻辑表名称生成数据节点，用于广播表（即每个库中都需要一个同样的表用于关联查询，多为字典表）或只分库不分表且所有库的表结构完全一致的情况
+      sharding:
+        tables:
+          t_user:
+            actual-data-nodes: server-user.t_user
+          t_order:
+            actual-data-nodes: server-order.t_order

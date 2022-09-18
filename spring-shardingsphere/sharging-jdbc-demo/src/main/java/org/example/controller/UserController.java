@@ -11,13 +11,27 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @description: 访问层
+ * @description: 读写分离测试，对应配置文件 application-dev.yml
+ *
  * @author: yh
  * @date: 2022/9/18
  */
 @RestController
 @RequestMapping(value = "/user")
 public class UserController {
+
+    /**
+     SQL:
+         CREATE DATABASE db_user;
+         USE db_user;
+         CREATE TABLE t_user (
+         id BIGINT AUTO_INCREMENT,
+         uname VARCHAR(30),
+         PRIMARY KEY (id)
+         );
+         INSERT INTO t_user(uname) VALUES('zhang3');
+         INSERT INTO t_user(uname) VALUES(@@hostname);
+     */
 
     @Resource
     private UserMapper userMapper;
@@ -28,7 +42,7 @@ public class UserController {
      * @author: yh
      * @date: 2022/9/18
      */
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @GetMapping("/insert")
     public void userInsert(){
         User u = new User();

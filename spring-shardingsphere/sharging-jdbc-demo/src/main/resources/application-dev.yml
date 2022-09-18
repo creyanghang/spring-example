@@ -1,4 +1,4 @@
-# 读写分离配置
+# 读写分离配置，使用前先搭建mysql主从数据库，对应UserController
 spring:
   shardingsphere:
     datasource:

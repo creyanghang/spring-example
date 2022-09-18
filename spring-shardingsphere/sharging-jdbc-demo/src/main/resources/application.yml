@@ -2,7 +2,8 @@ spring:
   application:
     name: sharging-jdbc-demo
   profiles:
-    active: dev
+    # active: dev # 读写分离
+    active: dev2 # 垂直分片
 
 
 
